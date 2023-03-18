@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #app {
+  height: 100%;
+}
+
+body {
+  @apply font-barlow
+}
+
+.landing {
+  background-image: radial-gradient(circle, #302b63, #24243e);
+  /* background-image: radial-gradient(circle, #302b63, #24243e); */
+  @apply h-full flex flex-col items-center justify-center text-white px-8
+  /* @apply bg-gradient-to-tl from-indigo-900 via-pink-900 to-purple-900 */
+}
+
+.support-dashboard {
+  background-image: radial-gradient(circle, #302b63, #24243e);
+  @apply h-full flex flex-col items-center justify-start text-white px-8 py-20 overflow-y-auto
+}
+
+.form-group {
+  @apply block mb-4
+}
+
+.form-label, .form-check-label {
+  @apply text-slate-800
+}
+
+.form-control {
+  @apply w-full mt-1 rounded placeholder:text-slate-400 font-light
+}
+
+.form-check {
+  @apply flex gap-2 items-center
+}
+
+.form-check-input {
+  @apply rounded
+}
+
+.input-error {
+  @apply mt-2 text-sm text-red-500
+}
+
+.dropdown {
+  @apply relative
+}
+
+.dropdown-content {
+  @apply absolute right-0 flex flex-col bg-white py-2 rounded shadow
+}
+
+.dropdown-item {
+  @apply block py-2 px-4 text-left hover:bg-slate-50
+}
+
+.btn-block {
+  @apply w-full py-2 px-4 rounded
+}
+
+.btn-yellow {
+  @apply bg-yellow-400 hover:bg-yellow-500 active:bg-yellow-600 text-slate-900
+}
+
+.btn {
+  @apply px-2 py-1
+}
+
+.btn-md {
+  @apply px-4 py-2
+}
+
+.btn-primary {
+  @apply bg-indigo-600 text-white rounded hover:bg-indigo-500
+}
+
+.btn-outline-primary {
+  @apply text-indigo-600 rounded border border-indigo-600 hover:bg-indigo-500 hover:border-indigo-600 hover:text-white
+}
+
+.btn-secondary {
+  @apply bg-slate-600 text-white rounded hover:bg-slate-500
+}
+
+.main-content {
+  @apply p-4
+}
+
+.page-heading {
+  @apply flex justify-between items-center
+}
+
+.page-title {
+  @apply text-3xl font-light
+}
+
+.card {
+  @apply bg-white text-slate-700 border border-gray-100 rounded-md shadow-md p-4
+}
+
+.card-heading {
+  @apply -mx-4 -mt-4 py-2 px-4 flex
+}
+
+.card-body {
+  @apply -mx-4 px-4 py-4
+}
+
+.card-title {
+  @apply text-2xl font-light text-slate-800
+}
+
+.message-body p {
+  @apply py-1
+}
